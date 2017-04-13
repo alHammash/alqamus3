@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "alqamus",
+    "password": "alqamus",
+    "database": "alqamus",
+    "host": "0.0.0.0",
+        "port": "3306",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "alqamus",
+    "password": "alqamus",
+    "database": "alqamus",
+    "host": "0.0.0.0",
+        "port": "3306",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "alqamus",
+    "password": "alqamus",
+    "database": "alqamus",
+    "host": "0.0.0.0",
+    "port": "3306",
+    "dialect": "mysql"
+  }
+}

@@ -1,0 +1,11 @@
+version: '2'
+services:
+  db:
+    image: mysql:5.6
+    environment:
+      - MYSQL_ROOT_PASSWORD=almuujam
+      - MYSQL_USER=almuujam
+      - MYSQL_PASSWORD=almuujam
+      - MYSQL_DATABASE=almuujam
+    ports:
+      - 53306:3306
