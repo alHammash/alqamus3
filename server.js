@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({extended: true}));
  });
 
  var routes = require('./routes/index');
- var user = require('./routes/user');
+ var user = require('./routes/user_route');
 app.use('/', routes);
  app.use('/v1/user', user);
 module.exports = app;
@@ -32,10 +32,11 @@ app.set('port', port);
  server.listen(port);
  //if you want to disable sync and cleanup the database replace true by false in he next line
  //models.sequelize.sync({force: false})
- models.sequelize.sync({force: true})
+  models.sequelize.sync({force: true})
         .then(function (err) {
     console.log('sequelize ready');
+
         }, function (err) {
             console.log('An error occurred while creating the table:', err);
         });
- console.log("Server listening on port" + port);
+ console.log("Server listening on http://localhost:" + port);

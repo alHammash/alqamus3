@@ -20,7 +20,11 @@ module.exports = function(sequelize, DataTypes) {
     password: {
       type: DataTypes.STRING,
       allowNull: false
-    },
+     },
+     role_id: {
+       type: DataTypes.INTEGER(11),
+       allowNull: true
+     },
      auth_token: {
       type: DataTypes.STRING,
       allowNull: true

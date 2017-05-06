@@ -21,6 +21,8 @@ as many express application we use familiar structure for express programmer.
 
 |---------------config.json  //for setup your database connection
 
+|---------------passport.js   //setup passport functions
+
 |----models
 
 |---------------index.js //setup sequelizer framework and models folder to all models inside the folder
@@ -56,7 +58,7 @@ install dependencies:
 run server:
 ```
 cd bin
-node server.js
+node www
 ```
 
 http://localhost:3000/
